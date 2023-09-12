@@ -33,7 +33,7 @@ export default function About() {
 		<div>
 			<Header />
 			<Banner />
-			<main className='about_main'>
+			<div className='about_main'>
 				{aboutDatas.map(data => {
 					return (
 						<div key={data.id} className="about_main_collapse">
@@ -41,7 +41,7 @@ export default function About() {
 						</div>
 					)}
 				)}
-			</main>
+			</div>
 			<Footer />
 		</div>
 	)
